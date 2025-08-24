@@ -1,2 +1,3 @@
-This is an [example dojo](https://github.com/pwncollege/example-dojo).
-Fork this repository, and create your own dojo!
+# Shell Dojo
+
+This is the source code for the acmoj Shell course.

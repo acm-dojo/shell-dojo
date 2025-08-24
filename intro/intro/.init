@@ -1,0 +1,2 @@
+export DOJO_CH_ID="M0P0"
+python /mnt/core/main.py

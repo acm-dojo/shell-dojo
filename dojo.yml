@@ -1,10 +1,11 @@
-id: example
-name: Example Dojo
-type: example
+id: shell
+name: Shell Dojo
+type: course
 award:
-  emoji: 😀
+  emoji: 🐚
 image: pwncollege/challenge-simple
 modules:
-  - id: hello
-  - id: world
-  - id: demo
+  - id: intro
+  - id: navigation
+mounts:
+  - id: core
