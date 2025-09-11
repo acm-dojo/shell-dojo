@@ -1,0 +1,1 @@
+python /mnt/core/main.py

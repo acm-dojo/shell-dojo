@@ -1,5 +1,4 @@
-export DOJO_CH_ID="M0P0"
-touch /home/hacker/hello
-echo "Hello has been created"
+#!/bin/bash
 
-python /mnt/core/main.py
+echo 'source /challenge/.bashrc' >> /etc/bash.bashrc
+ln -s /etc/bash.bashrc /etc/bashrc
