@@ -1,1 +1,1 @@
-/run/dojo/bin/python /mnt/core/main.py
+/mnt/core-wrapper/wrapper

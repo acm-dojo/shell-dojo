@@ -2,3 +2,4 @@
 
 echo 'source /challenge/.bashrc' >> /etc/bash.bashrc
 ln -s /etc/bash.bashrc /etc/bashrc
+ln -s /mnt/core-wrapper/wrapper /tutorial
