@@ -1,1 +1,1 @@
-Welcome to the Dojo!
+欢迎来到 Shell 教程！在这一章节你将学习如何使用我们搭建的交互系统，了解为何我们需要 Shell。
