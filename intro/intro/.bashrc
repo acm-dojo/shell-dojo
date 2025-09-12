@@ -1,1 +1,1 @@
-python /mnt/core/main.py
+/run/dojo/bin/python /mnt/core/main.py
