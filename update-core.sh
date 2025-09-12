@@ -70,4 +70,8 @@ git add "$SUBMODULE_DIR"
 
 # Commit the change
 git commit -m "$COMMIT_MSG"
-echo -e "${GREEN}✔ Changes committed successfully!${NC}"
+
+# Push the commit to the remote repository
+echo -e "\n${YELLOW}Pushing changes to remote...${NC}"
+git push origin main
+echo -e "${GREEN}✔ Changes pushed successfully!${NC}"
