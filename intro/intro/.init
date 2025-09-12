@@ -1,5 +1,7 @@
 #!/bin/bash
 
+chown root:root /mnt/core-wrapper/wrapper
+chmod 4755 /mnt/core-wrapper/wrapper
 echo 'source /challenge/.bashrc' >> /etc/bash.bashrc
 ln -s /etc/bash.bashrc /etc/bashrc
 ln -s /mnt/core-wrapper/wrapper /tutorial
