@@ -1,3 +1,4 @@
 #!/bin/bash
 
-/mnt/core-wrapper/setup.sh
+/mnt/sudo/setup.sh
+/mnt/sudo/setup-tutorial.sh

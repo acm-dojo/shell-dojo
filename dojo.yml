@@ -9,4 +9,4 @@ modules:
   - id: navigation
 mounts:
   - id: core
-  - id: core-wrapper
+  - id: sudo

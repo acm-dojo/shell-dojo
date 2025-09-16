@@ -1,1 +1,0 @@
-/mnt/core-wrapper/wrapper
