@@ -47,4 +47,4 @@ Educational content is organized in `core/contents/` following the MxPy naming s
 
 ## 📖 Curriculum Overview
 
-Refer to [WHAT_TO_TEACH.md](./core/WHAT_TO_TEACH.md) for more details.
+Refer to [WHAT_TO_TEACH.md](https://github.com/acm-dojo/shell-dojo-core/blob/main/WHAT_TO_TEACH.md) for more details.
