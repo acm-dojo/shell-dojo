@@ -1,1 +1,6 @@
 name: Snooping Around
+challenges:
+  - id: navigation-basics
+    name: Basic Navigation
+  - id: hidden-treasure
+    name: Finding Hidden Files

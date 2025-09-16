@@ -1,0 +1,7 @@
+name: Users and Permissions
+description: Understand file permissions and user privileges
+challenges:
+  - id: permission-basics
+    name: File Permissions
+  - id: sudo-power
+    name: Administrative Privileges

@@ -1,0 +1,9 @@
+name: Understanding Commands
+description: Learn about commands, how to find them, and how to get help
+challenges:
+  - id: command-discovery
+    name: What is a Command?
+  - id: getting-help
+    name: Finding Help and Documentation
+  - id: shell-environment
+    name: Customizing Your Shell

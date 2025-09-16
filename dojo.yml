@@ -7,6 +7,10 @@ image: pwncollege/challenge-simple
 modules:
   - id: intro
   - id: navigation
+  - id: commands
+  - id: pipes
+  - id: permissions
+  - id: packages
 mounts:
   - id: core
   - id: sudo
