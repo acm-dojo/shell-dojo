@@ -40,7 +40,7 @@ int main(int argc, char *argv[]) {
 
     if (!valid) {
         // reject to run any file not in signature
-        fprintf(stderr, "script not authorized to launch root python, exiting.\n");
+        fprintf(stderr, "script %s not authorized to launch root python, exiting.\n", argv[1]);
         return error_code;
     }
 
