@@ -2,3 +2,6 @@
 
 /mnt/sudo/setup.sh
 /mnt/sudo/setup-tutorial.sh
+
+# Setup the tutorial environment
+chmod +x /challenge/run
