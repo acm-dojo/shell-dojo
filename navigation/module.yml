@@ -2,5 +2,7 @@ name: Snooping Around
 challenges:
   - id: read
     name: Navigation Basics
-  - id: write
-    name: Operating on Files
+  - id: write-folder
+    name: Changing Folders
+  - id: write-file
+    name: Changing Files
