@@ -1,7 +1,7 @@
 name: Commanding Commands
 challenges:
   - id: commands
-    name: About Commands
+    name: On Commands
   - id: help
     name: Finding Help
   - id: environ
