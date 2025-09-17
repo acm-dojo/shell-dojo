@@ -9,5 +9,5 @@ jobs:
       - uses: pwncollege/dojo-update@v1
         with:
           site: ${{ secrets.DOJO_BASE_URL }}
-          dojo: shell~dc9b469e
+          dojo: shell~30f3c326
           update_code: ${{ secrets.UPDATE_CODE }}
