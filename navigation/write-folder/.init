@@ -5,3 +5,5 @@
 
 # Setup the tutorial environment
 chmod +x /challenge/run
+chmod 700 challenge/challenge_tmp
+chmod 700 challenge/.robin
