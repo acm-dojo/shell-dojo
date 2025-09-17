@@ -1,7 +1,5 @@
-name: Users and Permissions
+name: Perceiving Permissions
 description: Understand file permissions and user privileges
 challenges:
-  - id: permission-basics
+  - id: basics
     name: File Permissions
-  - id: sudo-power
-    name: Administrative Privileges
