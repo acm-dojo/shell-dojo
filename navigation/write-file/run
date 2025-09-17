@@ -26,14 +26,14 @@ if [ ! -e "/challenge/.robin/to_cp" ]; then
 fi
 
 # Check for /challenge/directory/cp_end/to_cp
-if [ ! -e "/challenge/directory/cp_end/to_cp" ]; then
-    echo "Missing: /challenge/directory/cp_end/to_cp"
+if [ ! -e "/challenge/challenge_tmp/directory/cp_end/to_cp" ]; then
+    echo "Missing: /challenge/challenge_tmp/directory/cp_end/to_cp"
     exit 1
 fi
 
 # Check for /challenge/directory/mv_end/to_mv
-if [ ! -e "/challenge/directory/mv_end/to_mv" ]; then
-    echo "Missing: /challenge/directory/mv_end/to_mv"
+if [ ! -e "/challenge/challenge_tmp/directory/mv_end/to_mv" ]; then
+    echo "Missing: /challenge/challenge_tmp/directory/mv_end/to_mv"
     exit 1
 fi
 

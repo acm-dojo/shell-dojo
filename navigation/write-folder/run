@@ -18,11 +18,11 @@ if [ "$(pwd)" != "/challenge/.robin" ]; then
     exit 1
 fi
 
-# Check if /challenge/directory folder exists
-if [ ! -d "/challenge/directory" ]; then
-    echo "Missing directory: /challenge/directory"
+# Check if /challenge/challenge_tmp/directory folder exists
+if [ ! -d "/challenge/challenge_tmp/directory" ]; then
+    echo "Missing directory: /challenge/challenge_tmp/directory"
     exit 1
 fi
 
-echo "Correct! /challenge/directory detected and argument is valid."
+echo "Correct! /challenge/challenge_tmp/directory detected and argument is valid."
 cat /flag
