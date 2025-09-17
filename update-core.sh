@@ -71,6 +71,11 @@ git add "$SUBMODULE_DIR"
 # Commit the change
 git commit -m "$COMMIT_MSG"
 
+if [[ $* == *--no-push* ]]; then
+    echo -e "\n${YELLOW}--no-push flag detected. Skipping push to remote.${NC}"
+    exit 0
+fi
+
 # Push the commit to the remote repository
 echo -e "\n${YELLOW}Pushing changes to remote...${NC}"
 git push origin main
