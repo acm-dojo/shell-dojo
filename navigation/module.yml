@@ -1,1 +1,6 @@
 name: Snooping Around
+challenges:
+  - id: read
+    name: Navigation Basics
+  - id: write
+    name: Operating on Files

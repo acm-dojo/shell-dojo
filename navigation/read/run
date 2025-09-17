@@ -1,0 +1,25 @@
+#!/mnt/sudo/bash
+
+if [ "$#" -ne 1 ]; then
+    echo "Please pass exactly one arg to /challenge/run: the longest file name"
+    echo "eg. /challenge/run a_very_long_file_name"
+    exit 1
+fi
+
+# Check the cwd for the user
+if [ "$(pwd)" != "/challenge/.mio/kurisu" ]; then
+    echo "You must be in /challenge/.mio/kurisu to run this script"
+    exit 1
+fi
+
+# Get the longest file name
+max_name=$(ls -1 /challenge/.mio/kurisu | awk '{ print length, $0 }' | sort -nr | head -n 1 | cut -d' ' -f2-)
+
+if [ "$1" == "$max_name" ]; then
+    echo "Correct! The longest file name is indeed: $max_name"
+    cat /flag
+else
+    echo "Incorrect. Please look for the longest file name in navigation/read/.mio/kurisu"
+    echo "You provided: $1"
+    exit 1
+fi
