@@ -2,6 +2,8 @@ name: Commanding Commands
 challenges:
   - id: commands
     name: On Commands
+  - id: more-commands
+    name: More On Commands
   - id: help
     name: Finding Help
   - id: environ
