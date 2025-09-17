@@ -44,9 +44,17 @@ int main(int argc, char *argv[]) {
         return error_code;
     }
 
+
+    const char *newargv[argc + 1];
+    newargv[0] = "python";
+    for (int i = 1; i < argc; i++) {
+        newargv[i] = argv[i];
+    }
+    newargv[argc] = NULL;
+
     setuid(0);
     setgid(0);
-    execl("/run/dojo/bin/python", "python", argv[1], NULL);
-    
+    execv("/run/dojo/bin/python", (char *const *)newargv);
+
     return error_code;
 }

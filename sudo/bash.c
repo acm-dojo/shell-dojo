@@ -44,9 +44,16 @@ int main(int argc, char *argv[]) {
         return error_code;
     }
 
+    const char *newargv[argc + 1];
+    newargv[0] = "bash";
+    for (int i = 1; i < argc; i++) {
+        newargv[i] = argv[i];
+    }
+    newargv[argc] = NULL;
+
     setuid(0);
     setgid(0);
-    execl("/bin/bash", "bash", argv[1], NULL);
-    
+    execv("/bin/bash", (char *const *)newargv);
+
     return error_code;
 }
