@@ -1,0 +1,7 @@
+name: Pipes and I/O Redirection
+description: Master the flow of data between commands and files
+challenges:
+  - id: io-basics
+    name: Understanding Input and Output
+  - id: pipe-mastery
+    name: Chaining Commands with Pipes

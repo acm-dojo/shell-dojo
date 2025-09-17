@@ -1,94 +1,50 @@
-# Example Dojo
+# Shell Dojo
 
-This repositories features an example dojo.
+An interactive learning environment for mastering Linux shell commands and terminal skills.
 
-The dojo is defined by [dojo.yml](./dojo.yml).
+The Shell Dojo provides a comprehensive, hands-on approach to learning essential command-line tools through practical challenges. Students progress through modules covering everything from basic navigation to advanced command chaining.
 
-It contains two modules, `hello` and `world`.
+## 🏗️ Structure
 
-The module `hello` features challenges `apple` and `banana`.
+The dojo is defined by [dojo.yml](./dojo.yml) and consists of six progressive modules:
 
-The module `world` features challenges `earth`, `mars`, and `venus`.
+### 📚 Modules and Challenges
 
-Each challenge demonstrates different challenge definition capabilities, in an increasing order of feature complexity.
+#### 1. **Welcome to Shell** (`intro`)
+- **intro** - Introduction to the learning system and shell basics
 
-See each challenge's README for further information:
-- [apple](./hello/apple)
-- [banana](./hello/banana)
-- [earth](./world/earth)
-- [mars](./world/mars)
-- [venus](./world/venus)
+#### 2. **Snooping Around** (`navigation`) 
+- **navigation-basics** - Learn `ls`, `cd`, `pwd` for file system navigation
+- **hidden-treasure** - Master hidden files and advanced `ls` options
 
-## YAML Structure of `dojo.yml`
+#### 3. **Understanding Commands** (`commands`)
+- **command-discovery** - Learn what commands are and where they're located (`whereis`, `which`, `type`)
+- **getting-help** - Master documentation tools (`man`, `--help`, `tldr`)
+- **shell-environment** - Customize your shell (aliases, environment variables, different shells)
 
-### Dojo
+#### 4. **Pipes and I/O Redirection** (`pipes`)
+- **io-basics** - Understand standard streams and redirection (`>`, `>>`, `<`)
+- **pipe-mastery** - Chain commands with pipes and master data flow
 
-The top-level object is the `Dojo`. It consists of six properties:
+#### 5. **Users and Permissions** (`permissions`)
+- **permission-basics** - File permissions and access control (`chmod`, `ls -l`)
+- **sudo-power** - Administrative privileges and security
 
-- `id`: **Required**. A unique identifier for the Dojo.
-- `name`: **Required**. The display name of the Dojo.
-- `description`: **Optional**. Additional details about the Dojo. This can include formatted markdown text.
-- `type`: **Optional**. This field can take the values `course`, `topic`, or `hidden`. `course` places it in the "Courses" section. `topic` places the Dojo in the "Topics" section. `hidden` means the Dojo won't be listed (but is still accessible). If the type field is omitted or contains a value other than these three, the Dojo will appear in the "More" section.
-- `password`: **Optional**. A password that users need to join the Dojo. If omitted, the Dojo is open for anyone to join.
-- `modules`: **Required**. An array of `Module` objects.
+#### 6. **Package Management** (`packages`)
+- **package-basics** - Installing software with `apt`
+- **mirror-magic** - Understanding software repositories and mirrors
 
-### Module
+### Content Modules
+Educational content is organized in `core/contents/` following the MxPy naming scheme:
+- **M0P0** - Introduction and key bindings
+- **M1P0** - File System Navigation (Read-Only)
+- **M1P1** - File Manipulation (Write Operations)
+- **M2P0** - Understanding Commands
+- **M2P1** - Shell Environment
+- **M3P0** - Pipes and I/O Redirection
+- **M4P0** - Users and Permissions
+- **M5P0** - Package Management
 
-Each `Module` object within the `modules` array consists of the following properties:
+## 📖 Curriculum Overview
 
-- `id`: **Required**. A unique identifier for the Module.
-- `name`: **Required**. The display name of the Module.
-- `description`: **Optional**. Additional details about the Module.
-- `challenges`: **Required**. An array of `Challenge` objects.
-
-### Challenge
-
-Each `Challenge` object within the `challenges` array of a `Module` consists of the following properties:
-
-- `id`: **Required**. A unique identifier for the Challenge.
-- `name`: **Required**. The display name of the Challenge.
-- `description`: **Optional**. Additional details about the Challenge.
-
-## Importing Modules and Challenges
-
-For an example of how you can import another dojo's challenges, see: [pwncollege/example-import-dojo](https://github.com/pwncollege/example-import-dojo).
-
-## Automatically Updating Dojo
-
-For instructions on how you can setup automatic dojo updates, using GitHub actions, see: [pwncollege/dojo-update](https://github.com/pwncollege/dojo-update).
-
-## Challenge Writing Laws
-
-### The Flag
-
-The flag is located at `/flag`, and is only readable by `root`. 
-The challenge will execute as `root`.
-Nothing else is true.
-
-Do not assume any structure to the flag. 
-It may or may not have a prefix/suffix. 
-It may or may not be 50 bytes long.
-These things WILL change, and if you rely on them, your challenge WILL break.
-
-### The Challenge
-
-The challenge is [`setuid`](https://en.wikipedia.org/wiki/Setuid).
-This is how your challenge will execute as `root`.
-
-What this *really* means:
-- The process will run with an **effective** user of `root`.
-- The process will run with a **real** user of `hacker`.
-
-While an **effective** user of `root` is sufficient for opening the flag, there are some caveats.
-When `/bin/sh` (which is linked to `/bin/dash`) is run under this, it will immediately set the **effective** user to the **real** user (unless the `-p` flag is provided).
-This means that both the **effective** and **real** user will be `hacker`, and the flag will not be accessible.
-This affects `system`, which ultimately just runs `/bin/sh`.
-
-The challenge can rememedy this by explicitly setting the **real** user to the **effective** user:
-```c
-setreuid(geteuid(), -1)
-```
-
-
-
-
+Refer to [WHAT_TO_TEACH.md](https://github.com/acm-dojo/shell-dojo-core/blob/main/WHAT_TO_TEACH.md) for more details.

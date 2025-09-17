@@ -1,0 +1,4 @@
+#!/bin/bash
+
+/mnt/sudo/setup.sh
+/mnt/sudo/setup-tutorial.sh
