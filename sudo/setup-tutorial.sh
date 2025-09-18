@@ -3,6 +3,8 @@
 # Sign the tutorial script
 echo "/mnt/sudo/run-tutorial" >> /challenge/.signature
 echo "/mnt/sudo/run-card" >> /challenge/.signature
+echo "/challenge/tutorial" >> /challenge/.signature
+echo "/challenge/card" >> /challenge/.signature
 
 # Alias for users
 ln -s /mnt/sudo/run-tutorial /challenge/tutorial
