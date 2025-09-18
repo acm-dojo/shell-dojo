@@ -4,7 +4,5 @@ challenges:
     name: On Commands
   - id: more-commands
     name: More On Commands
-  - id: help
-    name: Finding Help
   - id: environ
     name: All About Shell
