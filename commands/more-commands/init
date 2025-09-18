@@ -1,4 +1,29 @@
 #!/bin/bash
 
+set -euo pipefail
+
 /mnt/sudo/setup.sh
+
+chmod 755 /challenge/rand
+FNAME=$(/challenge/rand 8)
+
+mkdir -p "/bin/$FNAME"
+mv /challenge/mystery /bin/$FNAME/mystery
+mv /challenge/EMERGENCY.md /bin/$FNAME/EMERGENCY.md
+chmod +x /bin/$FNAME/mystery
+chmod 644 /bin/$FNAME/EMERGENCY.md
+
+# move the runtime to /opt
+mv /challenge/mystery-runtime /opt/mystery-runtime
+chmod -R 755 /opt/mystery-runtime
+
+# link the flag to /opt/mystery-runtime/flag
+ln -s /flag /opt/mystery-runtime/flag
+
+# add the command to PATH in bashrc
+echo "export PATH=/bin/$FNAME:$PATH" >> /etc/bash.bashrc
+
+# allow mystery to be run in sudo bash
+echo "/bin/$FNAME/mystery" >> /challenge/.signature
+
 /mnt/sudo/setup-tutorial.sh

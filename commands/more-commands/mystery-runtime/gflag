@@ -1,0 +1,6 @@
+#!/bin/bash
+
+# Outputs the path to the flag, relative to the current working directory
+# Flag is linked to <script dir>/flag
+
+/usr/bin/realpath $0 | /usr/bin/xargs -I {} dirname {} | /usr/bin/xargs -I {} echo {}/flag

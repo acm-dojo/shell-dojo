@@ -1,0 +1,63 @@
+#!/mnt/sudo/bash
+
+# If you are reading the source code of this file, you might find it a bit hard to understand.
+# Try the --help command to understand what this file does.
+# It is normally better than munching through the source code.
+
+# Sadly, this file is not documented in man or tldr :(
+
+set -euo pipefail
+
+usage() {
+	cat <<'EOF'
+Usage: mystery [--help] [--with-flag]
+
+Reads one line from stdin and outputs a response:
+	--help       Show this help and exit
+	--with-flag  If input is exactly "flag", output the content of /flag;
+							 otherwise, echo the input unchanged
+	(no flag)    Echo the input unchanged
+EOF
+}
+
+WITH_FLAG=0
+
+case "${1-}" in
+	--help)
+		usage
+		exit 0
+		;;
+	--with-flag)
+		WITH_FLAG=1
+		shift || true
+		;;
+	"" ) ;;
+	*)
+		echo "Unknown option: $1" >&2
+		echo "Try '--help' for usage." >&2
+		exit 2
+		;;
+esac
+
+# Read a single line from stdin
+if ! IFS= read -r line; then
+	exit 0
+fi
+
+if [ "$WITH_FLAG" -eq 1 ] && [ "$line" = "flag" ]; then
+	if [ -r /flag ]; then
+		# Figure out where the flag is using the runtime environment
+		FPATH=$(gflag)
+		if [ -n "$FPATH" ] && [ -r "$FPATH" ]; then
+			cat "$FPATH"
+		else
+			echo "Error: Error in finding flag file!" >&2
+			exit 1
+		fi
+	else
+		# Fall back to echoing the input if /flag is unreadable
+		echo "$line"
+	fi
+else
+	echo "$line"
+fi

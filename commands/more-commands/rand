@@ -1,0 +1,15 @@
+#!/bin/bash
+
+if [ "$1" == "--help" ] || [ "$1" == "-h" ]; then
+  echo "Usage: rand"
+  echo "Generate a random alphanumeric string of a given length."
+  exit 0
+fi
+
+if [ "${1:-}" ]; then
+  LENGTH=$1
+else
+  LENGTH=16
+fi
+
+tr -dc A-Za-z0-9 </dev/urandom | head -c $LENGTH; echo
