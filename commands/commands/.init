@@ -9,4 +9,8 @@ chmod +x /bin/$FNAME/mystery
 
 # add the command to PATH in bashrc
 echo 'export PATH=/bin/$FNAME:$PATH' >> /etc/bash.bashrc
+
+# allow mystery to be run in sudo bash
+echo /bin/$FNAME/mystery >> /challenge/.signature
+
 /mnt/sudo/setup-tutorial.sh
