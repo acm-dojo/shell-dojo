@@ -1,0 +1,36 @@
+#!/bin/bash
+
+# This file will check: source the user's bashrc file and check for aliases and PATH
+
+# Ensure we load the bashrc
+source ~/.bashrc
+
+# 1. Check if the alias 'c' is defined for 'clear'
+if alias c &>/dev/null; then
+    if ! [[ "$(alias c)" == "alias c='clear'" ]]; then
+        echo "Alias 'c' is defined, but not as 'clear'."
+        exit 1
+    fi
+else
+    echo "Alias 'c' is not defined."
+    exit 1
+fi
+
+# 2. Check if the alias 'll' is defined for 'ls -la'
+if alias ll &>/dev/null; then
+    if ! [[ "$(alias ll)" == "alias ll='ls -la'" ]]; then
+        echo "Alias 'll' is defined, but not as 'ls -la'."
+        exit 1
+    fi
+else
+    echo "Alias 'll' is not defined."
+    exit 1
+fi
+
+# 3. Check if /challenge/bin is in PATH
+if echo "$PATH" | tr ':' '\n' | grep -qx "/challenge/bin"; then
+    fetch
+else
+    echo "/challenge/bin is NOT in PATH."
+    exit 1
+fi
