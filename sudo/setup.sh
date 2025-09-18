@@ -9,3 +9,4 @@ if [ ! -f /challenge/.signature ]; then
     touch /challenge/.signature
     chown root:root /challenge/.signature
     chmod 644 /challenge/.signature # Readable by all users
+fi
