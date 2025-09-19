@@ -1,0 +1,7 @@
+#!/bin/bash
+
+/mnt/sudo/setup.sh
+/mnt/sudo/setup-tutorial.sh
+
+chown hacker:hacker ./run
+chmod -x ./run
