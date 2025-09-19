@@ -26,8 +26,8 @@ The dojo is defined by [dojo.yml](./dojo.yml) and consists of six progressive mo
 - **io-basics** - Understand standard streams and redirection (`>`, `>>`, `<`)
 - **pipe-mastery** - Chain commands with pipes and master data flow
 
-#### 5. **Users and Permissions** (`permissions`)
-- **permission-basics** - File permissions and access control (`chmod`, `ls -l`)
+#### 5. **Users and Permission** (`permission`)
+- **permission-basics** - File permission and access control (`chmod`, `ls -l`)
 - **sudo-power** - Administrative privileges and security
 
 #### 6. **Package Management** (`packages`)
@@ -42,7 +42,7 @@ Educational content is organized in `core/contents/` following the MxPy naming s
 - **M2P0** - Understanding Commands
 - **M2P1** - Shell Environment
 - **M3P0** - Pipes and I/O Redirection
-- **M4P0** - Users and Permissions
+- **M4P0** - Users and Permission
 - **M5P0** - Package Management
 
 ## 📖 Curriculum Overview

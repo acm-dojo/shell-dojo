@@ -9,7 +9,7 @@ modules:
   - id: navigation
   - id: commands
   - id: pipes
-  - id: permissions
+  - id: permission
   - id: packages
 mounts:
   - id: core
