@@ -5,3 +5,4 @@
 
 chown hacker:hacker /challenge/run
 chmod -x /challenge/run
+chmod +x /challenge/validation
