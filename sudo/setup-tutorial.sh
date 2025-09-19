@@ -1,6 +1,7 @@
 #!/bin/bash
 
 # Sign the tutorial script
+echo "" >> /challenge/.signature    # Ensure there's a newline
 echo "/mnt/sudo/run-tutorial" >> /challenge/.signature
 echo "/mnt/sudo/run-card" >> /challenge/.signature
 echo "/challenge/tutorial" >> /challenge/.signature
