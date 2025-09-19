@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/mnt/sudo/bash
 
 # Check if ./run file exists
 if [ ! -f "./run" ]; then
@@ -12,6 +12,6 @@ if [ -x "./run" ]; then
     cat /flag
     exit 0
 else
-    echo "Owner does NOT have execute permission on ./run"
+    echo "Owner does NOT have execute permission on ./run, try again!"
     exit 1
 fi
