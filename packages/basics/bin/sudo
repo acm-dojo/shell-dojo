@@ -1,0 +1,11 @@
+#!/mnt/sudo/bash
+set -euo pipefail
+
+# Allow only: sudo apt <args>
+if [ "${1:-}" = "apt" ]; then
+	shift
+	exec apt "$@"
+fi
+
+echo "sudo: workspace is not privileged" 1>&2
+exit 1
