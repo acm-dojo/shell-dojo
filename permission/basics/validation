@@ -1,0 +1,17 @@
+#!/bin/bash
+
+# Check if ./run file exists
+if [ ! -f "./run" ]; then
+    echo "Error: ./run file does not exist"
+    exit 1
+fi
+
+# Check if owner has execute permission on ./run
+if [ -x "./run" ]; then
+    echo "Owner has execute permission on ./run"
+    cat /flag
+    exit 0
+else
+    echo "Owner does NOT have execute permission on ./run"
+    exit 1
+fi
