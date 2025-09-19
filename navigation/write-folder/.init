@@ -5,7 +5,7 @@
 
 # Setup the tutorial environment
 chmod +x /challenge/run
-chown hacker challenge/challenge_tmp
-chown hacker challenge/.robin
-chmod 777 challenge/challenge_tmp
-chmod 777 challenge/.robin
+chown hacker /challenge/challenge_tmp
+chown hacker /challenge/.robin
+chmod 777 /challenge/challenge_tmp
+chmod 777 /challenge/.robin
