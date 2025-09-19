@@ -8,7 +8,7 @@ fi
 
 # Check if the argument is Muelsyse
 if [ "$1" != "Muelsyse" ]; then
-    echo "The only accepted argument is: Muelsyse"
+    echo "The only accepted argument is wrong"
     exit 1
 fi
 
