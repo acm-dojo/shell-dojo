@@ -1,0 +1,6 @@
+FROM pwncollege/challenge-simple
+
+RUN apt-get update -y && apt-get install -y g++ build-essential
+
+# Default workdir inside container
+WORKDIR /src

@@ -1,0 +1,4 @@
+#!/bin/bash
+# dojo-g++ : drop-in replacement for g++ that compiles inside dojo container
+
+docker run --rm -v "$PWD":/src -w /src dojo-gpp g++ "$@"
