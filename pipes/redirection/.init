@@ -2,3 +2,6 @@
 
 /mnt/sudo/setup.sh
 /mnt/sudo/setup-tutorial.sh
+
+chmod +x /challenge/hanoi
+chmod +x /challenge/judge

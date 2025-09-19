@@ -1,0 +1,38 @@
+#!/mnt/sudo/bash
+
+set -euo pipefail
+
+if [[ "$1" == "--help" ]]; then
+    cat <<EOF
+Usage: /challenge/judge <output_file>
+
+Check whether <output_file> matches the reference solution for the Hanoi problem.
+
+Steps:
+  1. Run /challenge/hanoi with the input /challenge/1.in
+  2. Compare the output with <output_file>
+  3. If identical, print "AC" and flag then exit 0; otherwise print "WA" and exit 1.
+EOF
+    exit 0
+fi
+
+if [[ $# -ne 1 ]]; then
+    echo "Error: missing argument. Use --help for usage."
+    exit 1
+fi
+
+USER_OUT="$1"
+REF_OUT=$(mktemp)
+
+/challenge/hanoi < /challenge/1.in > "$REF_OUT"
+
+if diff -q "$USER_OUT" "$REF_OUT" >/dev/null; then
+    echo "AC"
+    rm "$REF_OUT"
+    cat /flag
+    exit 0
+else
+    echo "WA"
+    rm "$REF_OUT"
+    exit 1
+fi
