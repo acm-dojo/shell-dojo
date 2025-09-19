@@ -1,0 +1,4 @@
+#!/mnt/sudo/bash
+
+echo "Good! Here is your flag:"
+cat /flag
