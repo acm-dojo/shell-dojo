@@ -4,6 +4,6 @@
 
 chmod +x /challenge/moo
 chmod +x /challenge/bin/sudo    # overwrite the original sudo
-echo "export PATH=/challenge/bin:$PATH" >> /etc/bash.bashrc
+echo "export PATH=/challenge/bin:/usr/games/:$PATH" >> /etc/bash.bashrc
 
 /mnt/sudo/setup-tutorial.sh
