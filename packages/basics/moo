@@ -1,0 +1,4 @@
+#!/mnt/sudo/bash
+
+FLAG=$(< /flag)
+cowsay "$FLAG"

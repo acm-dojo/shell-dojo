@@ -1,7 +1,7 @@
 name: Package Management
 description: Learn to install and manage software packages
 challenges:
-  - id: package-basics
-    name: Installing Software
-  - id: mirror-magic
-    name: Understanding Software Mirrors
+  - id: basics
+    name: Installing Packages 
+  - id: mirrors
+    name: Mirror Magic
