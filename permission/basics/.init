@@ -4,4 +4,3 @@
 /mnt/sudo/setup-tutorial.sh
 
 chown hacker:hacker ./run
-chmod -x ./run
