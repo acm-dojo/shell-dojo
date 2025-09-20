@@ -1,0 +1,15 @@
+#!/mnt/sudo/bash
+
+# read from stdin
+/run/dojo/bin/read input
+
+ANS=$(/run/dojo/bin/cat /challenge/bookstore.log | /run/dojo/bin/grep "DEBUG" | /run/dojo/bin/grep "SwitchUser" | /run/dojo/bin/grep -v "root" | /run/dojo/bin/wc -l)
+
+if [ "$input" == "$ANS" ]; then
+    /run/dojo/bin/echo "Correct! Here is your flag:"
+    /run/dojo/bin/cat /flag
+    exit 0
+else
+    /run/dojo/bin/echo "You got the answer wrong! :("
+    exit 1
+fi

@@ -1,0 +1,404 @@
+[DEBUG]	Called SwitchUser: root with password #539549749
+[INFO]	SwitchUser successful!
+[DEBUG]	Current user: {7} [root] root #539549749
+[DEBUG]	Called Select
+[INFO]	Selection successful
+[DEBUG]	Called Modify
+[INFO]	Modification successful!
+[DEBUG]	Called Select
+[INFO]	Selection successful
+[DEBUG]	Called Modify
+[INFO]	Modification successful!
+[DEBUG]	Called Password without current password.
+[DEBUG]	Called Import
+[INFO]	Import successful!
+[DEBUG]	Called Password without current password.
+[DEBUG]	Called Import
+[INFO]	Import successful!
+[DEBUG]	Called Import
+[INFO]	Import successful!
+[DEBUG]	Called UserAdd
+[DEBUG]	Called Logout
+[INFO]	Logout Successful.
+[DEBUG]	Current user: {0} []  #0
+[DEBUG]	Called SwitchUser: UIrD with password #632299988
+[INFO]	SwitchUser successful!
+[DEBUG]	Current user: {3} [UIrD] ShannonJohnson #632299988
+[DEBUG]	Called Logout
+[INFO]	Logout Successful.
+[DEBUG]	Current user: {0} []  #0
+[DEBUG]	Called SwitchUser: root with password #145835753
+[INFO]	SwitchUser successful!
+[DEBUG]	Current user: {7} [root] root #145835753
+[DEBUG]	Called Select
+[INFO]	Selection successful
+[DEBUG]	Called Modify
+[INFO]	Modification successful!
+[DEBUG]	Called Delete
+[DEBUG]	Called UserAdd
+[DEBUG]	Called UserAdd
+[DEBUG]	Called UserAdd
+[DEBUG]	Called Import
+[INFO]	Import successful!
+[DEBUG]	Called Select
+[INFO]	Selection successful
+[DEBUG]	Called Modify
+[INFO]	Modification successful!
+[DEBUG]	Called Delete
+[DEBUG]	Called Select
+[INFO]	Selection successful
+[DEBUG]	Called Modify
+[INFO]	Modification successful!
+[DEBUG]	Called Select
+[INFO]	Selection successful
+[DEBUG]	Called Modify
+[INFO]	Modification successful!
+[DEBUG]	Called Import
+[INFO]	Import successful!
+[DEBUG]	Called UserAdd
+[DEBUG]	Called UserAdd
+[DEBUG]	Called UserAdd
+[DEBUG]	Called Select
+[INFO]	Selection successful
+[DEBUG]	Called Modify
+[INFO]	Modification successful!
+[DEBUG]	Called Logout
+[INFO]	Logout Successful.
+[DEBUG]	Current user: {0} []  #0
+[DEBUG]	Called Select
+[DEBUG]	Called Modify
+[DEBUG]	Called Register
+[DEBUG]	Called SwitchUser: root with password #145835753
+[INFO]	SwitchUser successful!
+[DEBUG]	Current user: {7} [root] root #145835753
+[DEBUG]	Called Logout
+[INFO]	Logout Successful.
+[DEBUG]	Current user: {0} []  #0
+[DEBUG]	Called Select
+[DEBUG]	Called Modify
+[DEBUG]	Called Select
+[DEBUG]	Called Modify
+[DEBUG]	Called Select
+[DEBUG]	Called Modify
+[DEBUG]	Called SwitchUser: 7oIKBlyCuw97mLQ6 with password #652665265
+[INFO]	SwitchUser successful!
+[DEBUG]	Current user: {3} [7oIKBlyCuw97mLQ6] VanessaBass #652665265
+[DEBUG]	Called Select
+[INFO]	Selection successful
+[DEBUG]	Called Modify
+[INFO]	Modification successful!
+[DEBUG]	Called Import
+[INFO]	Import successful!
+[DEBUG]	Called UserAdd
+[DEBUG]	Called Logout
+[INFO]	Logout Successful.
+[DEBUG]	Current user: {0} []  #0
+[DEBUG]	Called Register
+[DEBUG]	Called Register
+[DEBUG]	Called Register
+[DEBUG]	Called Select
+[DEBUG]	Called Modify
+[DEBUG]	Called SwitchUser: 9Ar_ezr with password #118
+[INFO]	SwitchUser successful!
+[DEBUG]	Current user: {1} [9Ar_ezr] EmilyGreen #118
+[DEBUG]	Called Buy
+[INFO]	Successfully purchased #978-1-57076-066-2 x1
+[DEBUG]	Called Logout
+[INFO]	Logout Successful.
+[DEBUG]	Current user: {0} []  #0
+[DEBUG]	Called SwitchUser: root with password #145835753
+[INFO]	SwitchUser successful!
+[DEBUG]	Current user: {7} [root] root #145835753
+[DEBUG]	Called Delete
+[DEBUG]	Called Password without current password.
+[DEBUG]	Called Select
+[INFO]	Selection successful
+[DEBUG]	Called Import
+[INFO]	Import successful!
+[DEBUG]	Called Password without current password.
+[DEBUG]	Called Select
+[INFO]	Selection successful
+[DEBUG]	Called Modify
+[INFO]	Modification successful!
+[DEBUG]	Called Password without current password.
+[DEBUG]	Called Select
+[INFO]	Selection successful
+[DEBUG]	Called Modify
+[INFO]	Modification successful!
+[DEBUG]	Called Select
+[INFO]	Selection successful
+[DEBUG]	Called Modify
+[INFO]	Modification successful!
+[DEBUG]	Called Delete
+[DEBUG]	Called UserAdd
+[DEBUG]	Called Select
+[INFO]	Selection successful
+[DEBUG]	Called Modify
+[INFO]	Modification successful!
+[DEBUG]	Called Select
+[INFO]	Selection successful
+[DEBUG]	Called Modify
+[INFO]	Modification successful!
+[DEBUG]	Called Logout
+[INFO]	Logout Successful.
+[DEBUG]	Current user: {0} []  #0
+[DEBUG]	Called Register
+[DEBUG]	Called SwitchUser: nkIt8LYyGrMvDX with password #79
+[INFO]	SwitchUser successful!
+[DEBUG]	Current user: {3} [nkIt8LYyGrMvDX] RobynRivas #79
+[DEBUG]	Called Select
+[INFO]	Selection successful
+[DEBUG]	Called Modify
+[INFO]	Modification successful!
+[DEBUG]	Called UserAdd
+[DEBUG]	Called UserAdd
+[DEBUG]	Called Logout
+[INFO]	Logout Successful.
+[DEBUG]	Current user: {0} []  #0
+[DEBUG]	Called SwitchUser: UlIpSmNA2O with password #561129162
+[INFO]	SwitchUser successful!
+[DEBUG]	Current user: {1} [UlIpSmNA2O] MichaelOsborne #561129162
+[DEBUG]	Called Buy
+[INFO]	Successfully purchased #978-0-346-59823-2 x1
+[DEBUG]	Called Buy
+[DEBUG]	Called Select
+[DEBUG]	Called Modify
+[DEBUG]	Called Buy
+[DEBUG]	Called Password with current password.
+[DEBUG]	Called FindByISBN: 978-0-641-43198-2
+[DEBUG]	Called Password with current password.
+[DEBUG]	Called Password with current password.
+[DEBUG]	Called FindByISBN: 978-1-4693-2357-2
+[DEBUG]	Called Select
+[DEBUG]	Called Modify
+[DEBUG]	Called FindByAuthor: MckenzieWhite
+[DEBUG]	Called Select
+[DEBUG]	Called Modify
+[DEBUG]	Called Buy
+[DEBUG]	Called Logout
+[INFO]	Logout Successful.
+[DEBUG]	Current user: {0} []  #0
+[DEBUG]	Called Select
+[DEBUG]	Called Modify
+[DEBUG]	Called Select
+[DEBUG]	Called Modify
+[DEBUG]	Called Select
+[DEBUG]	Called Modify
+[DEBUG]	Called SwitchUser: TonZqtseoVxvJSZtsx3Ou with password #681191354
+[INFO]	SwitchUser successful!
+[DEBUG]	Current user: {1} [TonZqtseoVxvJSZtsx3Ou] AmandaZhang #681191354
+[DEBUG]	Called Select
+[DEBUG]	Called Modify
+[DEBUG]	Called Logout
+[INFO]	Logout Successful.
+[DEBUG]	Current user: {0} []  #0
+[DEBUG]	Called SwitchUser: root with password #145835753
+[INFO]	SwitchUser successful!
+[DEBUG]	Current user: {7} [root] root #145835753
+[DEBUG]	Called Logout
+[INFO]	Logout Successful.
+[DEBUG]	Current user: {0} []  #0
+[DEBUG]	Called SwitchUser: root with password #145835753
+[INFO]	SwitchUser successful!
+[DEBUG]	Current user: {7} [root] root #145835753
+[DEBUG]	Called Logout
+[INFO]	Logout Successful.
+[DEBUG]	Current user: {0} []  #0
+[DEBUG]	Called Select
+[DEBUG]	Called Modify
+[DEBUG]	Called SwitchUser: nkIt8LYyGrMvDX with password #79
+[INFO]	SwitchUser successful!
+[DEBUG]	Current user: {3} [nkIt8LYyGrMvDX] RobynRivas #79
+[DEBUG]	Called Select
+[INFO]	Selection successful
+[DEBUG]	Called Modify
+[INFO]	Modification successful!
+[DEBUG]	Called UserAdd
+[DEBUG]	Called UserAdd
+[DEBUG]	Called UserAdd
+[DEBUG]	Called UserAdd
+[DEBUG]	Called Logout
+[INFO]	Logout Successful.
+[DEBUG]	Current user: {0} []  #0
+[DEBUG]	Called Select
+[DEBUG]	Called Modify
+[DEBUG]	Called SwitchUser: 2HqSjyyVXj1XtJn with password #281831981
+[INFO]	SwitchUser successful!
+[DEBUG]	Current user: {1} [2HqSjyyVXj1XtJn] ShannonGill #281831981
+[DEBUG]	Called Logout
+[INFO]	Logout Successful.
+[DEBUG]	Current user: {0} []  #0
+[DEBUG]	Called SwitchUser: PMVfH98fiCX52qDIn567tM with password #893732948
+[INFO]	SwitchUser successful!
+[DEBUG]	Current user: {1} [PMVfH98fiCX52qDIn567tM] KurtCooper #893732948
+[DEBUG]	Called Buy
+[INFO]	Successfully purchased #978-0-346-59823-2 x1
+[DEBUG]	Called FindByAuthor: MckenzieWhite
+[DEBUG]	Called Select
+[DEBUG]	Called Modify
+[DEBUG]	Called Buy
+[INFO]	Successfully purchased #978-1-4693-2357-2 x1
+[DEBUG]	Called Logout
+[INFO]	Logout Successful.
+[DEBUG]	Current user: {0} []  #0
+[DEBUG]	Called Select
+[DEBUG]	Called Modify
+[DEBUG]	Called Select
+[DEBUG]	Called Register
+[DEBUG]	Called SwitchUser: 9Ar_ezr with password #118
+[INFO]	SwitchUser successful!
+[DEBUG]	Current user: {1} [9Ar_ezr] EmilyGreen #118
+[DEBUG]	Called FindByAuthor: AmandaDean
+[DEBUG]	Called Buy
+[DEBUG]	Called Select
+[DEBUG]	Called Modify
+[DEBUG]	Called Select
+[DEBUG]	Called Modify
+[DEBUG]	Called Logout
+[INFO]	Logout Successful.
+[DEBUG]	Current user: {0} []  #0
+[DEBUG]	Called SwitchUser: PMVfH98fiCX52qDIn567tM with password #893732948
+[INFO]	SwitchUser successful!
+[DEBUG]	Current user: {1} [PMVfH98fiCX52qDIn567tM] KurtCooper #893732948
+[DEBUG]	Called FindByKeyword: bianco
+[DEBUG]	Called Logout
+[INFO]	Logout Successful.
+[DEBUG]	Current user: {0} []  #0
+[DEBUG]	Called Select
+[DEBUG]	Called Modify
+[DEBUG]	Called Select
+[DEBUG]	Called Modify
+[DEBUG]	Called Select
+[DEBUG]	Called Modify
+[DEBUG]	Called Register
+[DEBUG]	Called Register
+[DEBUG]	Called Select
+[DEBUG]	Called Modify
+[DEBUG]	Called SwitchUser: OsotwBv5yNn_S8DfZAdOMed with password #321725144
+[INFO]	SwitchUser successful!
+[DEBUG]	Current user: {1} [OsotwBv5yNn_S8DfZAdOMed] AmandaSantiago #321725144
+[DEBUG]	Called Select
+[DEBUG]	Called Modify
+[DEBUG]	Called Logout
+[INFO]	Logout Successful.
+[DEBUG]	Current user: {0} []  #0
+[DEBUG]	Called Register
+[DEBUG]	Called SwitchUser: UlIpSmNA2O with password #552752468
+[INFO]	SwitchUser successful!
+[DEBUG]	Current user: {1} [UlIpSmNA2O] MichaelOsborne #552752468
+[DEBUG]	Called Buy
+[DEBUG]	Called Select
+[DEBUG]	Called Modify
+[DEBUG]	Called FindByISBN: 978-0-641-43198-2
+[DEBUG]	Called Buy
+[DEBUG]	Called Select
+[DEBUG]	Called Modify
+[DEBUG]	Called Logout
+[INFO]	Logout Successful.
+[DEBUG]	Current user: {0} []  #0
+[DEBUG]	Called SwitchUser: zSHHShLY1OI8rEPSK_DQNwXO with password #88015888
+[INFO]	SwitchUser successful!
+[DEBUG]	Current user: {1} [zSHHShLY1OI8rEPSK_DQNwXO] MartinRodriguez #88015888
+[DEBUG]	Called Buy
+[DEBUG]	Called Buy
+[DEBUG]	Called Select
+[DEBUG]	Called Modify
+[DEBUG]	Called FindByISBN: 978-1-59466-314-7
+[DEBUG]	Called Logout
+[INFO]	Logout Successful.
+[DEBUG]	Current user: {0} []  #0
+[DEBUG]	Called Register
+[DEBUG]	Called SwitchUser: zSHHShLY1OI8rEPSK_DQNwXO with password #88015888
+[INFO]	SwitchUser successful!
+[DEBUG]	Current user: {1} [zSHHShLY1OI8rEPSK_DQNwXO] MartinRodriguez #88015888
+[DEBUG]	Called Logout
+[INFO]	Logout Successful.
+[DEBUG]	Current user: {0} []  #0
+[DEBUG]	Called SwitchUser: nkIt8LYyGrMvDX with password #79
+[INFO]	SwitchUser successful!
+[DEBUG]	Current user: {3} [nkIt8LYyGrMvDX] RobynRivas #79
+[DEBUG]	Called UserAdd
+[DEBUG]	Called Select
+[INFO]	Selection successful
+[DEBUG]	Called Modify
+[INFO]	Modification successful!
+[DEBUG]	Called Select
+[INFO]	Selection successful
+[DEBUG]	Called Modify
+[INFO]	Modification successful!
+[DEBUG]	Called UserAdd
+[DEBUG]	Called Select
+[INFO]	Selection successful
+[DEBUG]	Called Modify
+[INFO]	Modification successful!
+[DEBUG]	Called Import
+[INFO]	Import successful!
+[DEBUG]	Called Logout
+[INFO]	Logout Successful.
+[DEBUG]	Current user: {0} []  #0
+[DEBUG]	Called Register
+[DEBUG]	Called SwitchUser: BHoe6QATTCN2dpznHX5ko5YKl with password #74095164
+[INFO]	SwitchUser successful!
+[DEBUG]	Current user: {1} [BHoe6QATTCN2dpznHX5ko5YKl] AprilGarcia #74095164
+[DEBUG]	Called SwitchUser: root with password #145835753
+[INFO]	SwitchUser successful!
+[DEBUG]	Current user: {7} [root] root #145835753
+[DEBUG]	Called Logout
+[INFO]	Logout Successful.
+[DEBUG]	Current user: {1} [BHoe6QATTCN2dpznHX5ko5YKl] AprilGarcia #74095164
+[DEBUG]	Called Buy
+[DEBUG]	Called Select
+[DEBUG]	Called Modify
+[DEBUG]	Called Buy
+[INFO]	Successfully purchased #978-0-346-59823-2 x1
+[DEBUG]	Called Logout
+[INFO]	Logout Successful.
+[DEBUG]	Current user: {0} []  #0
+[DEBUG]	Called SwitchUser: RTcVgrAxY4tg3OnKAlxUI_sV023xFa with password #64183376
+[INFO]	SwitchUser successful!
+[DEBUG]	Current user: {1} [RTcVgrAxY4tg3OnKAlxUI_sV023xFa] MatthewSmith #64183376
+[DEBUG]	Called Select
+[DEBUG]	Called Modify
+[DEBUG]	Called Buy
+[INFO]	Successfully purchased #978-1-4693-2357-2 x1
+[DEBUG]	Called Select
+[DEBUG]	Called Modify
+[DEBUG]	Called Logout
+[INFO]	Logout Successful.
+[DEBUG]	Current user: {0} []  #0
+[DEBUG]	Called Select
+[DEBUG]	Called Modify
+[DEBUG]	Called Register
+[DEBUG]	Called SwitchUser: UlIpSmNA2O with password #552752468
+[INFO]	SwitchUser successful!
+[DEBUG]	Current user: {1} [UlIpSmNA2O] MichaelOsborne #552752468
+[DEBUG]	Called Select
+[DEBUG]	Called Modify
+[DEBUG]	Called FindByAuthor: ZacharySilva
+[DEBUG]	Called Select
+[DEBUG]	Called Modify
+[DEBUG]	Called Select
+[DEBUG]	Called Modify
+[DEBUG]	Called Logout
+[INFO]	Logout Successful.
+[DEBUG]	Current user: {0} []  #0
+[DEBUG]	Called SwitchUser: 9Ar_ezr with password #118
+[INFO]	SwitchUser successful!
+[DEBUG]	Current user: {1} [9Ar_ezr] EmilyGreen #118
+[DEBUG]	Called Select
+[DEBUG]	Called Modify
+[DEBUG]	Called Buy
+[DEBUG]	Called FindByISBN: 978-0-910812-86-3
+[DEBUG]	Called Select
+[DEBUG]	Called Modify
+[DEBUG]	Called FindByKeyword: nutritious
+[DEBUG]	Called Buy
+[INFO]	Successfully purchased #978-1-57076-066-2 x1
+[DEBUG]	Called Buy
+[DEBUG]	Called Password with current password.
+[WARNING]	Failed to change password.
+[DEBUG]	Called Select
+[DEBUG]	Called Modify
+[DEBUG]	Called Select
+[DEBUG]	Called Modify
+[DEBUG]	Called Buy

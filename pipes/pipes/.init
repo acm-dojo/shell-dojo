@@ -2,3 +2,5 @@
 
 /mnt/sudo/setup.sh
 /mnt/sudo/setup-tutorial.sh
+
+chmod +x /challenge/submit
