@@ -1,7 +1,7 @@
 #!/mnt/sudo/bash
 
 # read from stdin
-/run/dojo/bin/read input
+read input
 
 ANS=$(/run/dojo/bin/cat /challenge/bookstore.log | /run/dojo/bin/grep "DEBUG" | /run/dojo/bin/grep "SwitchUser" | /run/dojo/bin/grep -v "root" | /run/dojo/bin/wc -l)
 
