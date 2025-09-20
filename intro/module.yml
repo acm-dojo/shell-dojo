@@ -2,3 +2,5 @@ name: Welcome to Shell
 challenges:
   - id: intro
     name: Introduction
+  - id: shortcuts
+    name: Taking a Shortcut
