@@ -1,3 +1,4 @@
-#!/bin/bash
+#!/mnt/sudo/bash
 
 echo "Good! You can run the validation script to get the flag now."
+cat /flag
