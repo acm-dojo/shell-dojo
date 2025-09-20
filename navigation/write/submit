@@ -1,0 +1,62 @@
+#!/mnt/sudo/bash
+
+set -euo pipefail
+
+CHDIR="/challenge/fish-tank"
+REQUIRED_NAME="gold-fish"
+EXPECTED_PATH="$CHDIR/$REQUIRED_NAME"
+HOME_SRC="/home/hacker/fish"
+
+err() {
+    /run/dojo/bin/printf '%s\n' "$*" >&2
+}
+
+# Basic existence checks
+if [ ! -d "$CHDIR" ]; then
+    err "FAIL: challenge directory does not exist: $CHDIR"
+    exit 1
+fi
+
+# List only top-level entries in CHDIR (this includes hidden files) safely using find -print0
+mapfile -d '' -t entries < <(find "$CHDIR" -mindepth 1 -maxdepth 1 -print0)
+
+# If find returns nothing, entries will be an array with one empty string; handle that:
+# normalize empty result to zero-length
+if [ "${#entries[@]}" -eq 1 ] && [ -z "${entries[0]}" ]; then
+    entries=()
+fi
+
+# Check that there's exactly one entry
+if [ "${#entries[@]}" -ne 1 ]; then
+    err "FAIL: expected exactly one entry inside $CHDIR (the '$REQUIRED_NAME' file)."
+    err "Found ${#entries[@]} entries:"
+    for p in "${entries[@]}"; do
+        /run/dojo/bin/printf '  - %s\n' "$(basename "$p")"
+    done
+    exit 1
+fi
+
+# Ensure that the single entry is the required name
+actual_path="${entries[0]}"
+actual_name="$(basename "$actual_path")"
+if [ "$actual_name" != "$REQUIRED_NAME" ]; then
+    err "FAIL: expected single file named '$REQUIRED_NAME' but found '$actual_name'"
+    exit 1
+fi
+
+# Ensure it's a regular file (not a directory). -f follows symlinks to regular files.
+if [ ! -f "$actual_path" ]; then
+    err "FAIL: '$actual_path' is not a regular file."
+    exit 1
+fi
+
+# Ensure the original /home/hacker/fish no longer exists (moved, not copied+left)
+if [ -e "$HOME_SRC" ]; then
+    err "FAIL: source still exists at $HOME_SRC — you must move (not copy) the file."
+    exit 1
+fi
+
+# All checks passed; print success and show flag if available
+/run/dojo/bin/printf 'PASS: Task completed successfully — %s exists and everything else removed.\n' "$EXPECTED_PATH"
+
+/run/dojo/bin/cat /flag

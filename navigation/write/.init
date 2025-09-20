@@ -1,0 +1,23 @@
+#!/bin/bash
+
+/mnt/sudo/setup.sh
+/mnt/sudo/setup-tutorial.sh
+
+# Setup the tutorial environment
+chmod +x /challenge/submit
+
+mkdir -p /challenge/fish-tank
+
+touch /challenge/fish-tank/.secret-fish
+mkdir -p /challenge/fish-tank/stones
+touch /challenge/fish-tank/stones/stone1
+touch /challenge/fish-tank/stones/stone2
+touch /challenge/fish-tank/stones/stone3
+
+chown -R hacker:hacker /challenge/fish-tank
+chmod -R 775 /challenge/fish-tank
+
+chmod 664 /challenge/fish-tank/.secret-fish
+chmod 664 /challenge/fish-tank/stones/stone1
+chmod 664 /challenge/fish-tank/stones/stone2
+chmod 664 /challenge/fish-tank/stones/stone3
