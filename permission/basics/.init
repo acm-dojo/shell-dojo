@@ -3,5 +3,6 @@
 /mnt/sudo/setup.sh
 /mnt/sudo/setup-tutorial.sh
 
-chown hacker:hacker ./run
-chmod -x ./run
+chown hacker:hacker /challenge/run
+chmod -x /challenge/run
+chmod +x /challenge/validation
