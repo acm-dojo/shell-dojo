@@ -7,7 +7,7 @@ if [[ $# -ne 1 ]]; then
     exit 1
 fi
 
-EXPECTED=$(grep -c /challenge/exerpt)
+EXPECTED=$(grep -c /challenge/poem)
 
 if [[ "$EXPECTED" -ne "$1" ]]; then
     echo "Nah, that's not it."
