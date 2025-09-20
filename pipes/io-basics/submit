@@ -1,0 +1,18 @@
+#!/mnt/sudo/bash
+
+set -euo pipefail
+
+if [[ $# -ne 1 ]]; then
+    echo "Usage: $0 <line-count>"
+    exit 1
+fi
+
+EXPECTED=$(grep -c /challenge/exerpt)
+
+if [[ "$EXPECTED" -ne "$1" ]]; then
+    echo "Nah, that's not it."
+    exit 1
+fi
+
+echo "Well done! Here is your flag:"
+cat /flag
