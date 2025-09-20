@@ -2,6 +2,8 @@ name: Snooping Around
 challenges:
   - id: read
     name: Navigation Basics
+  - id: touch
+    name: Touching Fish
   - id: write-folder
     name: Changing Folders
   - id: write-file

@@ -1,0 +1,19 @@
+#!/mnt/sudo/bash
+
+set -euo pipefail
+
+if [ ! -f /home/hacker/fish ]; then
+    /run/dojo/bin/echo "cannot find file: /home/hacker/fish"
+    exit 1
+fi
+
+CONTENT=$(cat /home/hacker/fish)
+
+if [[ "$CONTENT" == *"And so God intones: Let there be fish to touch."* ]]; then
+    /run/dojo/bin/echo "Correct! Here is your flag:"
+    /run/dojo/bin/cat /flag
+    exit 0
+else
+    /run/dojo/bin/echo "You got the answer wrong! :("
+    exit 1
+fi
