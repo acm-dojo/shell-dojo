@@ -1,4 +1,4 @@
-name: Pipes and I/O Redirection
+name: A Piper's Dream
 description: Master the flow of data between commands and files
 challenges:
   - id: io-basics
