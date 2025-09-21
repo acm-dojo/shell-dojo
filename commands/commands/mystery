@@ -39,9 +39,14 @@ case "${1-}" in
 		;;
 esac
 
-# Read a single line from stdin
-if ! IFS= read -r line; then
-	exit 0
+# Read a single line from stdin or use the first positional argument if provided
+if [ "${1-}" != "" ]; then
+	line="$1"
+else
+	# Read a single line from stdin
+	if ! IFS= read -r line; then
+		exit 0
+	fi
 fi
 
 if [ "$WITH_FLAG" -eq 1 ] && [ "$line" = "flag" ]; then
