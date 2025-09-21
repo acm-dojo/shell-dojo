@@ -1,5 +1,4 @@
 name: Perceiving Permission
-description: Understand file permission and user privileges
 challenges:
   - id: basics
     name: File Permission

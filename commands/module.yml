@@ -3,6 +3,6 @@ challenges:
   - id: commands
     name: On Commands
   - id: more-commands
-    name: More On Commands
+    name: More On Commands (Optional)
   - id: environ
-    name: All About Shell
+    name: All About Shell (Optional)

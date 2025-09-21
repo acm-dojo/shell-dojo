@@ -1,7 +1,6 @@
 name: Super Cow Powers
-description: Learn to install and manage software packages
 challenges:
   - id: basics
     name: Installing Packages 
   - id: mirrors
-    name: Mirror Magic
+    name: Mirror Magic (Optional)
