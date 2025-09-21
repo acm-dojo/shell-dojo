@@ -1,11 +1,15 @@
 #!/mnt/sudo/bash
 
-# read from stdin
-read input
+# accept first arg or fall back to stdin
+if [ -n "$1" ]; then
+    input="$1"
+else
+    read -r input
+fi
 
 ANS=$(/run/dojo/bin/cat /challenge/bookstore.log | /run/dojo/bin/grep "DEBUG" | /run/dojo/bin/grep "SwitchUser" | /run/dojo/bin/grep -v "root" | /run/dojo/bin/wc -l)
 
-if [ "$input" == "$ANS" ]; then
+if [ "$input" = "$ANS" ]; then
     /run/dojo/bin/echo "Correct! Here is your flag:"
     /run/dojo/bin/cat /flag
     exit 0
