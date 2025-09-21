@@ -1,3 +1,3 @@
-Package Management
+在这一章中, 你会接触到 Linux 中的包管理系统. 你会学习如何使用包管理器来安装和管理软件包, 以及如何为 apt 换源, 让下载速度大幅提升.
 
-Learn to install and manage software on Linux systems.
+等等, 为什么这个章节叫 Super Cow Powers? 向后读, 你就知道了.

@@ -1,1 +1,3 @@
-Navigating around the os
+在这一章中, 你将学习如何在 Shell 文件系统中导航、创建并修改文件.
+
+文件系统是 Shell 中重要的一环. 当你掌握了文件的基本操作, 你就正式进入了 Shell 的世界.

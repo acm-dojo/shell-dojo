@@ -1,3 +1,3 @@
-Users and Permission
+Linux 的用户系统一向是备受赞誉的. 相比起 Windows 的管理员权限, Linux 的用户权限系统更为细致和强大.
 
-Understand the multi-user nature of Linux and how to control file access.
+在本章节中, 你会学习到如何在 Shell 中管理权限系统, 并解决一些常用的权限问题.

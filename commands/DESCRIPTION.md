@@ -1,3 +1,1 @@
-Understanding Commands
-
-Learn what commands really are and how to find help when you need it.
+在这一章节, 你会深入了解 Linux 中的命令系统以及其工作原理. Stay Tuned!
