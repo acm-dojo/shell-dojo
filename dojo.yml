@@ -1,5 +1,6 @@
 id: shell
 name: Shell Dojo
+allow_privileged: false
 type: course
 award:
   emoji: 🐚
